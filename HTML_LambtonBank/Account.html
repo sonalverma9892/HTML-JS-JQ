@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LAMBTBANK</title>
+    <link rel="icon" href="lambton.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/test1.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="title" id="title">Welcome</h1>
+      </div>
+    </header>
+
+      <main>
+        <section class="container">
+
+      		<h2>Transfer Fund</h2>
+
+          <div class="field">
+            <label>From:</label>
+            <select id="UserSource" >
+              <option value="Checking">Checking</option>
+              <option value="Saving">Saving</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>To:</label>
+            <select name="value" id="UserTarget" onchange='CheckValue(this.value);'>
+              <option value="Checking">Checking</option>
+              <option value="Saving">Saving</option>
+              <option value="Other">Other</option>
+            </select>
+            <input type="text" name="value" id="value" style='display:none;'>
+
+          </div>
+            <div class="">
+              <label for="balance">Current Balance:</label>
+              <input id="bal" name="bal" type="text" class="field" value=2000 disabled="disabled">
+
+              <label for="balance">Credit:</label>
+              <label>Total Credit:</label>
+              <input id="total" name="bal" type="text" class="field" value=1000 disabled="disabled">
+
+              <label>Available Credit:</label>
+              <div id="available" class="field">1000</div>
+
+              <label for="amount">Amount:</label>
+              <input id="amount" name="amount" type="text" class="field">
+
+              <label for="finalBalance">Final Balance:</label>
+              <div id="finalbal" class="field" ></div>
+            </div>
+
+            <button id="Transfer" class="button bto-principal">Transfer</button>
+
+            <button id="logout" class="button bto-principal">Logout</button>
+
+        </section>
+        </main>
+
+
+        <script src="js/Account.js"> </script>
+
+  </body>
+</html>
