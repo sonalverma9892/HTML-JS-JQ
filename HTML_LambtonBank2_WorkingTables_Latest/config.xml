@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        id="com.sonalverma.lambtonbankapp"
+        version="1.0.0">
+
+    <name>
+        Lambton Bank
+    </name>
+
+    <description>
+        Menu of Lambton Bankt.
+    </description>
+
+    <platform name="android">
+    	<icon density="ldpi" src="icon.png" />
+    	<icon density="mdpi" src="icon.png" />
+    	<icon density="hdpi" src="icon.png" />
+    	<icon density="xhdpi" src="icon.png" />
+    	<icon density="xxhdpi" src="icon.png" />
+    	<icon density="xxxhdpi" src="icon.png" />
+    	<splash density="land-ldpi" src="res/screens/android/drawable-land-ldpi-screen.png" />
+    	<splash density="land-mdpi" src="res/screens/android/drawable-land-mdpi-screen.png" />
+    	<splash density="land-hdpi" src="res/screens/android/drawable-land-hdpi-screen.png" />
+    	<splash density="land-xhdpi" src="res/screens/android/drawable-land-xhdpi-screen.png" />
+    	<splash density="land-xxhdpi" src="res/screens/android/drawable-land-xxhdpi-screen.png" />
+    	<splash density="land-xxxhdpi" src="res/screens/android/drawable-land-xxxhdpi-screen.png" />
+    	<splash density="port-ldpi" src="res/screens/android/drawable-port-ldpi-screen.png" />
+    	<splash density="port-mdpi" src="res/screens/android/drawable-port-mdpi-screen.png" />
+    	<splash density="port-hdpi" src="res/screens/android/drawable-port-hdpi-screen.png" />
+    	<splash density="port-xhdpi" src="res/screens/android/drawable-port-xhdpi-screen.png" />
+    	<splash density="port-xxhdpi" src="res/screens/android/drawable-port-xxhdpi-screen.png" />
+    	<splash density="port-xxxhdpi" src="res/screens/android/drawable-port-xxxhdpi-screen.png" />
+</platform>
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+    <preference name="permissions" value="none" />
+    <!-- <icon src="icon.png" /> -->
+    <plugin name="cordova-plugin-splashscreen" />
+    <splash src="splash.png" />
+
+    <author href="https://ca.linkedin.com/in/sonalverma" email="vermasonal909@gmail.com">
+        Sonal Verma
+    </author>
+
+</widget>
