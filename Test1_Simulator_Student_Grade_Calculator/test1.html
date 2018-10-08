@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Student Estimated Grade </title>
+    <link rel="icon" href="lambton.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="test1.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="title">Student Estimated Grade</h1>
+      </div>
+    </header>
+
+      <main>
+        <section class="container">
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2">Student Name</th>
+                <th rowspan="2">Student ID</th>
+                <th colspan="6">Term-1</th>
+                <th colspan="6">Term-2</th>
+                <th colspan="6">Term-3</th>
+                <th rowspan="2">Cumulative GPA</th>
+              </tr>
+                <tr>
+                  <th>DB</th>
+                  <th>Swift</th>
+                  <th>IOS</th>
+                  <th>Java</th>
+                  <th>Android</th>
+                  <th>Partial GPA</th>
+                  <th>HTML</th>
+                  <th>PHP</th>
+                  <th>Cross</th>
+                  <th>IOS Adv</th>
+                  <th>Android Adv</th>
+                  <th>Partial GPA</th>
+                  <th>Tests</th>
+                  <th>Business Mobile</th>
+                  <th>Game</th>
+                  <th>Capstone</th>
+                  <th>Wearable</th>
+                  <th>Partial GPA</th>
+                </tr>
+            </thead>
+
+            <tbody id="table-students">
+
+              <tr class="student" id="first-student">
+                <td class="info-name">Sonal</td>
+                <td class="info-id">c0726246</td>
+                <td class="info-db">4.0</td>
+                <td class="info-swift">3.5</td>
+                <td class="info-ios">4.0</td>
+                <td class="info-java">4.0</td>
+                <td class="info-android">4.0</td>
+                <td class="info-gpa">A+</td>
+                <td class="info-html">4.0</td>
+                <td class="info-php">3.5</td>
+                <td class="info-cross">4.0</td>
+                <td class="info-iosadv">4.0</td>
+                <td class="info-androidadv">4.0</td>
+                <td class="info-gpa2">A+</td>
+                <td class="info-test">4.0</td>
+                <td class="info-buss">3.5</td>
+                <td class="info-game">4.0</td>
+                <td class="info-capstone">4.0</td>
+                <td class="info-wearable">4.0</td>
+                <td class="info-gpa3">A+</td>
+                <td class="info-cumu">A+</td>
+              </tr>
+            </tbody>
+      </table>
+    </section>
+  </main>
+
+  <section class="container">
+		<h2 id="title-form">Add new Student Detail</h2>
+
+		<ul id="erro-messages"></ul>
+
+		<form id="form-add">
+
+			<div class="">
+				<label for="name">Student Name:</label>
+				<input id="name" name="name" type="text" placeholder="Enter Student name" class="field">
+			</div>
+
+      <div class="">
+				<label for="id">Student ID:</label>
+				<input id="id" name="id" type="text" placeholder="Enter Student ID" class="field">
+			</div>
+
+      <h3 id="title-term">Term-1 Grades</h3>
+
+			<div class="group">
+				<label for="db">DB:</label>
+				<input id="db" name="db" type="text" placeholder="Enter grade" class="field-average">
+			</div>
+
+      <div class="group">
+				<label for="swift">Swift:</label>
+				<input id="swift" name="swift" type="text" placeholder="Enter db grade" class="field-average">
+			</div>
+
+      <div class="group">
+				<label for="ios">IOS:</label>
+				<input id="ios" name="ios" type="text" placeholder="Enter IOS grade" class="field-average">
+			</div>
+
+      <div class="group">
+				<label for="java">JAVA:</label>
+				<input id="java" name="java" type="text" placeholder="Enter Java grade" class="field-average">
+			</div>
+
+      <div class="group">
+				<label for="android">Android:</label>
+				<input id="android" name="android" type="text" placeholder="Enter Android grade" class="field-average">
+			</div>
+
+      <h3 id="title-term">Term-2 Grades</h3>
+
+			<div class="group">
+				<label for="html">HTML:</label>
+				<input id="html" name="html" type="text" placeholder="Enter HTML grades" class="field-average">
+			</div>
+
+      <div class="group">
+				<label for="php">PHP:</label>
+				<input id="php" name="php" type="text" placeholder="Enter PHP grade" class="field-average">
+			</div>
+
+      <div class="group">
+				<label for="cross">Cross:</label>
+				<input id="cross" name="cross" type="text" placeholder="Enter cross grade" class="field-average">
+			</div>
+
+      <div class="group">
+				<label for="ios_adv">IOS ADV:</label>
+				<input id="ios_adv" name="ios_adv" type="text" placeholder="Enter IOS Adv grade" class="field-average">
+			</div>
+
+      <div class="group">
+				<label for="android_adv">Android ADV:</label>
+				<input id="android_adv" name="android_adv" type="text" placeholder="Enter Android Adv grade" class="field-average">
+			</div>
+
+      <h3 id="title-term">Term-3 Grades</h3>
+
+			<div class="group">
+				<label for="test">Tests:</label>
+				<input id="test" name="test" type="text" placeholder="Enter Tests grade" class="field-average">
+			</div>
+
+      <div class="group">
+				<label for="bm">Business Mobile:</label>
+				<input id="bm" name="bm" type="text" placeholder="Enter BM grade" class="field-average">
+			</div>
+
+      <div class="group">
+				<label for="game">Games:</label>
+				<input id="game" name="game" type="text" placeholder="Enter Game grade" class="field-average">
+			</div>
+
+      <div class="group">
+				<label for="capstone">Capstone:</label>
+				<input id="capstone" name="capstone" type="text" placeholder="Enter capstone grade" class="field-average">
+			</div>
+
+      <div class="group">
+				<label for="wearables">Wearables:</label>
+				<input id="wearables" name="werables" type="text" placeholder="Enter Wearables grade" class="field-average">
+			</div>
+
+      <!-- <div class="">
+				<label for="cumu_GPA">Cumulative GPA:</label>
+				<input id="cumu_GPA" name="cumu_GPA" type="text" placeholder="" class="field">
+			</div> -->
+
+			<button id="add-student" class="button bto-principal">Add Student</button>
+
+      <div class="">
+				<label for="message">CO-OP Ready:</label>
+				<div id="message"></div>
+			</div>
+
+		</form>
+	</section>
+
+  <script src="test-calculation.js"> </script>
+  <script src="test_validation.js"> </script>
+
+
+  </body>
+  </html>
